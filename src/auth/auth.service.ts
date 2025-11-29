@@ -9,10 +9,8 @@ export class AuthService {
     constructor(
         private readonly usuariosService : UsuariosService,
         private readonly jwtService : JwtService
-    ){
-
-    }
-
+    ){ }
+    
     async signIn(email : string, password : string) : Promise<AuthResponseDto>{
 
         const resposta = this.usuariosService.buscarPorEmail(email)

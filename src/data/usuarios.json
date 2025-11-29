@@ -4,5 +4,11 @@
     "email": "lucas@gmail.com",
     "senhaHash": "$2a$10$2oou1TSONePW6lMUFii4HOA9iAaERgwgzUVNc.nV4Rz757jxhQxRW",
     "perfil": "admin"
+  },
+  {
+    "id": 2,
+    "email": "usuario@exemplo.com",
+    "senhaHash": "$2b$10$kAxsZ8uOxcVxZJN5.NrjnOQp5CL5mLCrzH.h9ytK7riDk/V91Vx6m",
+    "perfil": "recepcao"
   }
 ]

@@ -1,7 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { CreateConsultaDto } from './dto/create-consulta.dto';
 import * as fs from 'fs'
-import * as path from 'path';
 import { Consulta } from './entities/consulta.entity';
 
 @Injectable()

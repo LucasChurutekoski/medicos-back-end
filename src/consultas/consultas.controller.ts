@@ -1,7 +1,10 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, Put } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Put, UseGuards } from '@nestjs/common';
 import { ConsultasService } from './consultas.service';
 import { CreateConsultaDto } from './dto/create-consulta.dto';
+import { AuthGuard } from 'src/auth/auth.guard';
+import { RecepcaoGuard } from 'src/auth/recepcao.guard';
 
+ @UseGuards(AuthGuard, RecepcaoGuard)
 @Controller('consultas')
 export class ConsultasController {
   constructor(private readonly consultasService: ConsultasService) { }
