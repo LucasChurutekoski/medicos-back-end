@@ -34,6 +34,7 @@ export class MedicosService {
       createMedicoDto.crm
     )
     listaDeMedicos.push(novoMedico)
+    fs.writeFileSync(this.path, JSON.stringify(listaDeMedicos, null, 2), 'utf8')
     return novoMedico;
   }
 

@@ -4,11 +4,12 @@ import { CreatePacienteDto } from './dto/create-paciente.dto';
 import { AuthGuard } from 'src/auth/auth.guard';
 import { RecepcaoGuard } from 'src/auth/recepcao.guard';
 
-@UseGuards(AuthGuard, RecepcaoGuard)
+
 @Controller('pacientes')
 export class PacientesController {
   constructor(private readonly pacientesService: PacientesService) { }
-
+  
+  @UseGuards(AuthGuard, RecepcaoGuard)
   @Post()
   create(@Body() createPacienteDto: CreatePacienteDto) {
     return this.pacientesService.cadastrarPaciente(createPacienteDto);
