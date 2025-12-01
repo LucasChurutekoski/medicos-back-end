@@ -16,5 +16,11 @@
     "email": "lucas@gmail.com",
     "senhaHash": "$2b$10$IcVilUqxFoTLE2qcFIKT1.fxHFNh4wtJJTubcP42WDiJCuWVUVmpa",
     "perfil": "admin"
+  },
+  {
+    "id": 4,
+    "email": "fabricio@teste123.com",
+    "senhaHash": "$2b$10$M1tGQWPe3bMxDXe/XvVg3enFLn3rJOkeAN76/QaiDRf95xvhfkBPm",
+    "perfil": "admin"
   }
 ]

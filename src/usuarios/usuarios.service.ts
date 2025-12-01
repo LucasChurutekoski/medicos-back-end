@@ -28,9 +28,10 @@ export class UsuariosService {
   }
 
   private criaId() {
-    const usuario = this.lerBancoJson()
-    const id = usuario.length + 1
-    return id
+    let usuarios = this.lerBancoJson()
+    let ids = usuarios.map(m => m.id)
+    const maiorId = ids.length > 0 ? Math.max(...ids) : 0;
+    return maiorId + 1;
   }
 
   async criarUsuario(createUsuarioDto: CreateUsuarioDto) {

@@ -20,9 +20,11 @@ export class MedicosService {
     }
   }
 
-  private criaId(){
-    let listaDeMedicos = this.lerBancoJson.length
-    return listaDeMedicos++
+  private criaId() {
+    let listaDeMedicos = this.lerBancoJson()
+    let ids = listaDeMedicos.map(m => m.id)
+    const maiorId = ids.length > 0 ? Math.max(...ids) : 0;
+    return maiorId + 1;
   }
 
   async criarMedico(createMedicoDto: CreateMedicoDto) {
