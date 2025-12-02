@@ -28,5 +28,17 @@
     "nome": "Jaqueline",
     "cpf": "112003112003",
     "telefone": "(42)9-9988-7766"
+  },
+  {
+    "id": 6,
+    "nome": "lucas",
+    "cpf": "12332112331212",
+    "telefone": "(42)9999-8800"
+  },
+  {
+    "id": 7,
+    "nome": "deiverson paciente",
+    "cpf": "123123312311",
+    "telefone": "(42)9-9876-5432"
   }
 ]

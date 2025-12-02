@@ -22,5 +22,11 @@
     "email": "fabricio@teste123.com",
     "senhaHash": "$2b$10$M1tGQWPe3bMxDXe/XvVg3enFLn3rJOkeAN76/QaiDRf95xvhfkBPm",
     "perfil": "admin"
+  },
+  {
+    "id": 5,
+    "email": "fabricio@gmail.com",
+    "senhaHash": "$2b$10$FisypAfe3B8CUEl9huI4ee4qUFyZf0WtS2EzhySUo.UAopIvBbFo6",
+    "perfil": "recepcao"
   }
 ]
