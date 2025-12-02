@@ -15,7 +15,7 @@ export class ConsultasController {
   }
 
   @Get()
-  lsitarConsultas() {
+  listarConsultas() {
     return this.consultasService.listarConsultas();
   }
 
